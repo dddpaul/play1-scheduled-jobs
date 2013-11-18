@@ -1,0 +1,14 @@
+h3. Demo project for exposing Play! Framework bug.
+
+If application has some scheduled jobs (annotated with @Every or @On) "play status" command gets following error:
+
+play.jobs.JobsPlugin.getStatus() has failed (java.lang.NoSuchFieldException: sync)
+
+Affected framework versions: 1.2.x.
+
+Tested on these JREs:
+* 1.6.0.45;
+* 1.7.0.45.
+
+Tested on these OSes:
+* Ubuntu 12.04 x86_64 (baremetal).
